@@ -76,15 +76,18 @@ subtitle = "Software Engineer at Netex Learning, specializing in Generative AI."
   provider = "giscus"
 
   [comments.giscus]
-    repo = "braisdev/forBlogDiscussions"
-    repoID = "R_kgDONDBbxg="
+    repo = "braisdev/braisdev.github.io"
+    repoID = "R_kgDONDA-3w"
     category = "Announcements"
-    categoryID = "DIC_kwDONDBbxs4Cjhvh"
+    categoryID = "DIC_kwDONDA-384CjhuT"
     mapping = "pathname"
-    lightTheme = "light"
+    strict = ""
+    lightTheme = "noborder_light"
     darkTheme = "noborder_gray"
+    inputPosition = "top"
     reactionsEnabled = 1
     emitMetadata = 0
+    lang = "en"
 
   [comments.disqusjs]
     shortname = ""
@@ -135,11 +138,11 @@ subtitle = "Software Engineer at Netex Learning, specializing in Generative AI."
     siteName = ""
 
   [comments.gitalk]
-    owner = "braisdev"
-    admin = "braisdev"
-    repo = "forBlogDiscussions"
-    clientID = "Ov23lidAhw4SKkyWvSqF"
-    clientSecret = "78a6657546d2c1ac2d6cff199089292d5bddf15e"
+    owner = ""
+    admin = ""
+    repo = ""
+    clientID = ""
+    clientSecret = ""
 
   [comments.cusdis]
     host = ""
