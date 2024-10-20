@@ -1,147 +1,146 @@
-[params]
-  mainSections = ["post"]
-  rssFullContent = true
-  favicon = "/favicon.png"
+mainSections = ["post"]
+rssFullContent = true
+favicon = "/favicon.png"
 
-  [params.footer]
-    since = 2020
-    customText = ""
+[footer]
+since = 2020
+customText = ""
 
-  [params.dateFormat]
-    published = "Jan 02, 2006"
-    lastUpdated = "Jan 02, 2006 15:04 MST"
+[dateFormat]
+published = "Jan 02, 2006"
+lastUpdated = "Jan 02, 2006 15:04 MST"
 
-  [params.sidebar]
-    emoji = ""
-    subtitle = "Software Engineer at Netex Learning, specializing in Generative AI."
+[sidebar]
+emoji = ""
+subtitle = "Software Engineer at Netex Learning, specializing in Generative AI."
 
-    [params.sidebar.avatar]
-      enabled = true
-      local = true
-      src = "img/avatar.png"
+  [sidebar.avatar]
+    enabled = true
+    local = true
+    src = "img/avatar.png"
 
-  [params.article]
-    headingAnchor = false
-    math = false
-    readingTime = true
+[article]
+  headingAnchor = false
+  math = false
+  readingTime = true
 
-    [params.article.license]
-      enabled = true
-      default = "Licensed under CC BY-NC-SA 4.0"
+  [article.license]
+    enabled = true
+    default = "Licensed under CC BY-NC-SA 4.0"
 
-  [[params.widgets.homepage]]
-    type = "search"
+[[widgets.homepage]]
+  type = "search"
 
-  [[params.widgets.homepage]]
-    type = "archives"
+[[widgets.homepage]]
+  type = "archives"
 
-    [params.widgets.homepage.params]
-      limit = 5
+  [widgets.homepage.params]
+    limit = 5
 
-  [[params.widgets.homepage]]
-    type = "categories"
+[[widgets.homepage]]
+  type = "categories"
 
-    [params.widgets.homepage.params]
-      limit = 10
+  [widgets.homepage.params]
+    limit = 10
 
-  [[params.widgets.homepage]]
-    type = "tag-cloud"
+[[widgets.homepage]]
+  type = "tag-cloud"
 
-    [params.widgets.homepage.params]
-      limit = 10
+  [widgets.homepage.params]
+    limit = 10
 
-  [[params.widgets.page]]
-    type = "toc"
+[[widgets.page]]
+  type = "toc"
 
-  [params.opengraph.twitter]
+[opengraph.twitter]
+  site = ""
+  card = "summary_large_image"
+
+[defaultImage.opengraph]
+  enabled = false
+  local = false
+  src = ""
+
+[colorScheme]
+  toggle = true
+  default = "auto"
+
+[imageProcessing.cover]
+  enabled = true
+
+[imageProcessing.content]
+  enabled = true
+
+[comments]
+  enabled = true
+  provider = "gitalk"
+
+  [comments.giscus]
+    repo = "braisdev/forBlogDiscussions"
+    repoID = "R_kgDONDBbxg="
+    category = "Announcements"
+    categoryID = "DIC_kwDONDBbxs4Cjhvh"
+    mapping = "pathname"
+    lightTheme = "light"
+    darkTheme = "noborder_gray"
+    reactionsEnabled = 1
+    emitMetadata = 0
+
+  [comments.disqusjs]
+    shortname = ""
+    apiUrl = ""
+    apiKey = ""
+    admin = ""
+    adminLabel = ""
+
+  [comments.utterances]
+    repo = ""
+    issueTerm = "pathname"
+    label = ""
+
+  [comments.remark42]
+    host = ""
     site = ""
-    card = "summary_large_image"
+    locale = ""
 
-  [params.defaultImage.opengraph]
-    enabled = false
-    local = false
-    src = ""
+  [comments.vssue]
+    platform = ""
+    owner = ""
+    repo = ""
+    clientId = ""
+    clientSecret = ""
+    autoCreateIssue = false
 
-  [params.colorScheme]
-    toggle = true
-    default = "auto"
+  [comments.waline]
+    serverURL = ""
+    lang = ""
+    visitor = ""
+    avatar = ""
+    emoji = ["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"]
+    requiredMeta = ["name", "email", "url"]
+    placeholder = ""
 
-  [params.imageProcessing.cover]
-    enabled = true
+    [comments.waline.locale]
+      admin = "Admin"
 
-  [params.imageProcessing.content]
-    enabled = true
+  [comments.twikoo]
+    envId = ""
+    region = ""
+    path = ""
+    lang = ""
 
-  [params.comments]
-    enabled = true
-    provider = "giscus"
+  [comments.cactus]
+    defaultHomeserverUrl = "https://matrix.cactus.chat:8448"
+    serverName = "cactus.chat"
+    siteName = ""
 
-    [params.comments.giscus]
-      repo = "oxidane-uni/forBlogdiscussions"
-      repoID = "MDEwOlJlcG9zaXRvcnkzODk2MzU4OTc="
-      category = "Announcements"
-      categoryID = "DIC_kwDOFzlfOc4CbDbw"
-      mapping = "pathname"
-      lightTheme = "light"
-      darkTheme = "noborder_gray"
-      reactionsEnabled = 1
-      emitMetadata = 0
+  [comments.gitalk]
+    owner = "braisdev"
+    admin = "braisdev"
+    repo = "forBlogDiscussions"
+    clientID = "Ov23lidAhw4SKkyWvSqF"
+    clientSecret = "78a6657546d2c1ac2d6cff199089292d5bddf15e"
 
-    [params.comments.disqusjs]
-      shortname = ""
-      apiUrl = ""
-      apiKey = ""
-      admin = ""
-      adminLabel = ""
-
-    [params.comments.utterances]
-      repo = ""
-      issueTerm = "pathname"
-      label = ""
-
-    [params.comments.remark42]
-      host = ""
-      site = ""
-      locale = ""
-
-    [params.comments.vssue]
-      platform = ""
-      owner = ""
-      repo = ""
-      clientId = ""
-      clientSecret = ""
-      autoCreateIssue = false
-
-    [params.comments.waline]
-      serverURL = ""
-      lang = ""
-      visitor = ""
-      avatar = ""
-      emoji = ["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"]
-      requiredMeta = ["name", "email", "url"]
-      placeholder = ""
-
-      [params.comments.waline.locale]
-        admin = "Admin"
-
-    [params.comments.twikoo]
-      envId = ""
-      region = ""
-      path = ""
-      lang = ""
-
-    [params.comments.cactus]
-      defaultHomeserverUrl = "https://matrix.cactus.chat:8448"
-      serverName = "cactus.chat"
-      siteName = ""
-
-    [params.comments.gitalk]
-      owner = ""
-      admin = ""
-      repo = ""
-      clientID = ""
-      clientSecret = ""
-
-    [params.comments.cusdis]
-      host = ""
-      id = ""
+  [comments.cusdis]
+    host = ""
+    id = ""

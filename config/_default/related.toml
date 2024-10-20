@@ -1,14 +1,14 @@
 # config/_default/related.toml
 
-[params.related]
+[related]
 includeNewer = true
 threshold = 60
 toLower = false
 
-[[params.related.indices]]
+[[related.indices]]
 name = "tags"
 weight = 100
 
-[[params.related.indices]]
+[[related.indices]]
 name = "categories"
 weight = 200
