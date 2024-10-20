@@ -1,3 +1,4 @@
-# Permalinks format of each content section
+# config/_default/permalinks.toml
+
 post = "/p/:slug/"
 page = "/:slug/"

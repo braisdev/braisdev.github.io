@@ -1,32 +1,26 @@
-# Configure main menu and social menu
-#[[main]]
-#identifier = "home"
-#name = "Home"
-#url = "/"
-#[main.params]
-#icon = "home"
-#newtab = true
+# config/_default/menu.toml
 
+# Configure social menu
 [[social]]
 identifier = "github"
 name = "GitHub"
 url = "https://github.com/braisdev"
 
-[social.params]
-icon = "brand-github"
+  [social.params]
+    icon = "brand-github"
 
 [[social]]
 identifier = "x"
 name = "X"
 url = "https://x.com/braisms_dev"
 
-[social.params]
-icon = "brand-x"
+  [social.params]
+    icon = "brand-x"
 
 [[social]]
 identifier = "linkedin"
 name = "LinkedIn"
 url = "https://www.linkedin.com/in/brais-maneiro-sanchez/"
 
-[social.params]
-icon = "brand-linkedin"
+  [social.params]
+    icon = "brand-linkedin"
