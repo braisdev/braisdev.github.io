@@ -73,7 +73,7 @@ subtitle = "Software Engineer at Netex Learning, specializing in Generative AI."
 
 [comments]
   enabled = true
-  provider = "gitalk"
+  provider = "giscus"
 
   [comments.giscus]
     repo = "braisdev/forBlogDiscussions"
